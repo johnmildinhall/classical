@@ -79,4 +79,10 @@ input:focus {
 		max-width:100%;
 		font-size:34px;
 	}
+	#result{
+		margin-left:auto;
+		margin-right: auto;
+		padding: 10px 20px 0 20px;
+		font-size:2em;
+}
 }
