@@ -73,7 +73,7 @@ input:focus {
 .piece#proto{
 	display: none;
 }
-@media only screen and (max-width: 640px)
+@media only screen and (max-device-width: 640px)
 {
 	body{
 		max-width:auto;
