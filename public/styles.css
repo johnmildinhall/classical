@@ -85,7 +85,7 @@ input:focus {
 		padding: 10px 20px 0 20px;
 		font-size:2em;
 	}
-	composerImage{
+	.composerImage{
 		float:none;
 	}
 }
