@@ -17,6 +17,7 @@ var client_secret = 'a57c43efb9644574a96d6623fb8bfbc2'; // Your client secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 var store = require('./routes/store');
+var composers = require('./composer-data.js');
 
 /**
  * Generates a random string containing numbers and letters
@@ -45,7 +46,8 @@ app.use(express.static(__dirname + '/public'))
 //Search app
 app.get('/', store.home);
 
-app.get('/search', store.search);
+app.get('/search/:searchString', store.search);
+
 
 // app.get('/login', function(req, res) {
 
