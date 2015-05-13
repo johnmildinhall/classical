@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title Classical Music Ponce
+		script(src='//use.typekit.net/upb2ayy.js')
+		link(rel='stylesheet', href='css/introjs.min.css')
+		link(rel='stylesheet', href='css/styles.css')
+		script(src='//code.jquery.com/jquery-1.10.1.min.js')
+		script.
+			try{Typekit.load();}catch(e){}
+	
+	body
+		#search
+			input(name="searchInput" id="searchInput" onfocus="if (this.value=='Search Composer, Piece') {this.value = ''};" type="text" value="Search Composer, Piece" data-step="1" data-intro="<p>You can search for a composer, a piece, or an instrument.</p><p>Try searching for <b>Mozart</b>, <b>Sonata</b> or <b>Bassoon</b>.</p>")
+		#result
+			.piece#proto
+				.composerImage#proto
+				.textHolder
+					.composer
+					.title
+		script(src='js/front.js')
+		script(src='js/intro.min.js')
+
+		
